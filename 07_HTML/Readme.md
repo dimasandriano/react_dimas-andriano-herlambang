@@ -9,15 +9,15 @@ HTML singkatan dari Hypertext Markup Language adalah sebuah standar yang digunak
 - Membuat gambar dengan canvas
 - Mempublikasikan halaman website secara online
 ## Dokumentasi HTML
-- <!DOCTYPE html> = Mendefinisikan dokumen ini sebagai HTML5
-- <html> = Elemen root dari halaman HTML
-- <head> = Berisi informasi meta tentang dokumen
-- <title> = Menentukan judul untuk dokumen
-- <body> = Berisi konten halaman yang terlihat
+- `<!DOCTYPE html>` = Mendefinisikan dokumen ini sebagai HTML5
+- `<html>` = Elemen root dari halaman HTML
+- `<head>` = Berisi informasi meta tentang dokumen
+- `<title>` = Menentukan judul untuk dokumen
+- `<body>` = Berisi konten halaman yang terlihat
 ## Tag HTML
 - Div = tag div
 - Heading & Paragraf = heading dibagi 1-6
 - Styling = strong, em, s, br
 - Link = tag a
 - Image = tag img
-- List = Ordered List (<ol>) dan Unordered List(<ul>), setiap list item mengunakan tag <li>
+- List = Ordered List (`<ol>`) dan Unordered List(`<ul>`), setiap list item mengunakan tag `<li>`

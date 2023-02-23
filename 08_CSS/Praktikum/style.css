@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Roboto:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand{
+    font-size: 24px;
+}
+nav a{
+    font-size: 16px;
+    padding: 12px;
+}
+.container{
+    max-width: 1275px;
+    margin: 0 auto;
+}
+.navbar-nav{
+    display: none;
+}
+#nav-items-right{
+    display: block;
+}
+main{
+    background-color: #37517E;
+}
+.hero{
+    font-family: 'Jost', sans-serif;
+    width: 100%;
+    height: 760px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.hero-left h1{
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+}
+.hero-left p{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.hero-left a{
+    text-decoration: none;
+    color: white;
+}
+.hero-left a:last-child{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+.hero-left .btn-started{
+    border-radius: 50px;
+    background-color: #47B2E4;
+    padding: 9px 28.3594px 12px 28px;
+    margin-right: 65px;
+}
+.hero-right img{
+    width: 636px;
+    height: 527px;
+}
+.newsletter{
+    background-color: #F3F5FA;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    height: 239px;
+}
+.newsletter-text{
+    width: 636px;
+}
+.newsletter-text h2{
+    color: #37517E;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.newsletter-text p{
+    font-family: 'Open Sans', sans-serif;
+}
+.newsletter-text form{
+    position: relative;
+}
+form input{
+    width: 100%;
+    border-radius: 50px;
+    border-style: none;
+    height: 42.5px;
+    padding: 15px;
+}
+form button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 9.25px 20px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #47B2E4;
+    color: white;
+}
+/* Mobile */
+@media only screen and (max-width: 992px) {
+    .navbar-nav{
+        display: block;
+    }
+    #nav-items-right{
+        display: none;
+    }
+}

@@ -70,7 +70,7 @@
 						</p>
 					</div>
 					<div>
-						<form action="" class="needs-validation" onsubmit="validasi()" novalidate>
+						<form action="" class="needs-validation" id="form" novalidate>
 							<h2 class="fs-3 fw-medium">Detail Form</h2>
 							<div class="mb-3">
 								<div class="row">
@@ -210,6 +210,9 @@
 									</label>
 								</div>
 							</div>
+                     <div class="alert alert-dismissible fade d-none" role="alert" id="alertForm">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
 							<button
 								type="submit"
 								class="btn btn-primary w-100">
@@ -249,19 +252,29 @@
 					);
 				});
 			})();
-			function validasi(){
-				const name = document.getElementById('name').value;
+			document.getElementById('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
 				const lastname = document.getElementById('lastname').value;
 				const username = document.getElementById('username').value;
 				const email = document.getElementById('email').value;
 				const address = document.getElementById('address').value;
+            const alertForm = document.getElementById('alertForm');
 
 				if( name != '' && lastname != '' && username != '' && email != '' && address != '' ){
-					return 
+               alertForm.innerHTML = "Berhasil Membuat Akun";
+               alertForm.classList.remove('d-none');
+               alertForm.classList.add('show');
+               alertForm.classList.remove('alert-danger');
+               alertForm.classList.add('alert-success');
 				} else {
-					alert('Masukkan Data yang Valid')
+					alertForm.innerHTML = "Masukkan Data yang Valid";
+               alertForm.classList.remove('d-none');
+               alertForm.classList.add('show');
+               alertForm.classList.remove('alert-success');
+               alertForm.classList.add('alert-danger');
 				}
-			}
+         })
 		</script>
 	</body>
 </html>

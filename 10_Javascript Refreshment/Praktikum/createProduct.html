@@ -176,25 +176,26 @@
 		const price = document.getElementById('price')
 		const form = document.getElementById('form')
 		const btn = document.getElementById('btn')
-		const simbol = /[!@#{}$%^&*().,;'`?]/g;														//Prioritas 2 Point 1 Simbol yang dilarang
+		const simbol = /[!@#{}$%^&*().,;'`?]/;														//Prioritas 2 Point 1 Simbol yang dilarang
 
 		btn.addEventListener('click', function () {													//Prioritas 1 Point 3 tombol btn diklik 
 			if (productName.value.length > 25) {													//Prioritas 1 Point 1 ( Tidak Boleh 25 karakter )
-				alert('Nama produk tidak boleh melebihi 25 karakter')
+				return alert('Nama produk tidak boleh melebihi 25 karakter')
 			} else if (productName.value) {
-				if (productName.value.match(simbol)) {												//Prioritas 2 Point 2 Jika mengandung simbol
-					alert('Nama produk tidak boleh mengandung simbol')
+				if (productName.value.length > 10) {												//Prioritas 1 Point 2 ( Lebih 10 Karakter )
+					alert(`Panjang nama produk ${productName.value.length}`)
 				}
-			} else if (productName.value.length > 10) {												//Prioritas 1 Point 2 ( Lebih 10 Karakter )
-				alert(`Panjang nama produk ${productName.value.length}`)
+				if (productName.value.match(simbol)) {												//Prioritas 2 Point 2 Jika mengandung simbol
+					return alert('Nama produk tidak boleh mengandung simbol')
+				}
 			} else if (!productName.value) {														//Prioritas 1 Point 3 jika produk name kosong
-				alert('Masukkan nama produk dengan benar')
+				return alert('Masukkan nama produk dengan benar')
 			} else if (
 				!category.value || !file.value || !freshness.value || !desc.value || !price.value	//Prioritas 1 Point 3 jika produk price kosong
 			) {
-				alert('Isi semua form dengan benar')												//Prioritas 2 Point 3 jika semua form kosong
+				return alert('Isi semua form dengan benar')											//Prioritas 2 Point 3 jika semua form kosong
 			}																						//Eksplorasi Point 2 Saya menggunakan bs bawaan karena sudah border merah
-			alert(`Nama Produk = ${productName.value}														
+			return alert(`Nama Produk = ${productName.value}														
 			category = ${category.value} 
 			file = ${file.value} 
 			desc = ${desc.value} 

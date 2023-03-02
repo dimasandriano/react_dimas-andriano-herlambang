@@ -58,3 +58,10 @@ Dapat digunakan ketika semua elemen dari object atau array perlu dimasukkan ke d
 ### Method
 
 Sebuah fungsi yang terkait dengan objek membuat programnya sesederhana mungkin sesuai kegunaan masing-masing.
+
+- Concat
+- Map
+- Foreach
+- Slice
+- Filter
+- Reduce

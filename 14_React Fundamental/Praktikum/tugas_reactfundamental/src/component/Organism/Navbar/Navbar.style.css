@@ -1,0 +1,22 @@
+.navbar-brand {
+	font-size: 24px;
+	line-height: 28.5px;
+}
+nav a {
+	font-size: 16px;
+	padding: 12px;
+}
+.navbar-nav {
+	display: none;
+}
+#nav-items-right {
+	display: block;
+}
+@media only screen and (max-width: 992px) {
+	.navbar-nav {
+		display: block;
+	}
+	#nav-items-right {
+		display: none;
+	}
+}

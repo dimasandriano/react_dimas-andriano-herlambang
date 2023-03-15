@@ -7,8 +7,12 @@ export const InputProduct = ({
 	article,
 	bahasa,
 	gantiBahasa,
-	valueProductName,
-	// productName,
+	handleProductName,
+	productName,
+	handleProductImage,
+	productImage,
+	handleProductPrice,
+	productPrice,
 }) => {
 	return (
 		<div>
@@ -36,11 +40,11 @@ export const InputProduct = ({
 									</label>
 									<input
 										type="text"
-										className="form-control"
+										className={productName ? "form-control" : "form-control is-invalid"}
 										id="name"
 										required=""
-										// value={productName}
-										onChange={valueProductName}
+										value={productName}
+										onChange={handleProductName}
 									/>
 									<div className="invalid-feedback">Please add a product name.</div>
 								</div>
@@ -65,7 +69,14 @@ export const InputProduct = ({
 									<label htmlFor="file" className="form-label">
 										Image of Product
 									</label>
-									<input type="file" className="form-control" id="file" required="" />
+									<input
+										type="file"
+										className={productImage ? "form-control" : "form-control is-invalid"}
+										id="file"
+										required=""
+										value={productImage}
+										onChange={handleProductImage}
+									/>
 									<div className="invalid-feedback">Please choose a image product.</div>
 								</div>
 								<div className="mb-3">
@@ -130,12 +141,14 @@ export const InputProduct = ({
 										Product Price
 									</label>
 									<input
-										className="form-control"
+										className={productPrice ? "form-control" : "form-control is-invalid"}
 										type="number"
 										name="price"
 										id="price"
 										placeholder=" $ 1"
 										required=""
+										value={productPrice}
+										onChange={handleProductPrice}
 									/>
 									<div className="invalid-feedback">Please add a product price.</div>
 								</div>

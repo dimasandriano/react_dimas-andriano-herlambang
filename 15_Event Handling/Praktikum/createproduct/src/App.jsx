@@ -6,31 +6,24 @@ import "./App.style.css";
 import Article from "./Article";
 
 function App() {
-	const [isIndonesia, SetIsIndonesia] = useState(false);
-	const [productName, SetProductName] = useState("");
-	const [productPrice, SetProductPrice] = useState(0);
-	const [error, setError] = useState(false);
+	const [isIndonesia, setIsIndonesia] = useState(false);
+	const [productName, setProductName] = useState("");
+	const [productImage, setProductImage] = useState();
+	const [productPrice, setProductPrice] = useState();
 	const handleRandomNumber = (e) => {
 		e.preventDefault();
 		console.log(Math.floor(Math.random() * 100));
 	};
-	const handleBahasa = () => {
-		SetIsIndonesia(!isIndonesia);
-	};
+	const handleBahasa = () => setIsIndonesia(!isIndonesia);
 	const handleProductName = (e) => {
 		if (e.target.value.length >= 10) {
 			alert("Product name tidak boleh 10 karakter");
 			e.target.value = "";
 		}
-		SetProductName(e.target.value);
+		setProductName(e.target.value);
 	};
-	const handleSubmit = () => {
-		if (productName != "" && productPrice != 0) {
-			setError(false);
-		} else {
-			setError(true);
-		}
-	};
+	const handleProductImage = (e) => setProductImage(e.target.value);
+	const handleProductPrice = (e) => setProductPrice(e.target.value);
 	return (
 		<div>
 			<Navbar />
@@ -39,8 +32,12 @@ function App() {
 				article={Article}
 				bahasa={isIndonesia}
 				gantiBahasa={handleBahasa}
-				valueProductName={handleProductName}
+				handleProductName={handleProductName}
 				productName={productName}
+				handleProductImage={handleProductImage}
+				productImage={productImage}
+				handleProductPrice={handleProductPrice}
+				productPrice={productPrice}
 			/>
 			<ListProduct />
 		</div>

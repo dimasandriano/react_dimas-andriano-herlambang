@@ -18,14 +18,6 @@ function App() {
 		productFreshness: "",
 		productPrice: "",
 	});
-	const [editIndex, setEditIndex] = useState(null);
-	const [editValues, setEditValues] = useState({
-		id: "",
-		productName: "",
-		productCategory: "",
-		productFreshness: "",
-		productPrice: "",
-	});
 
 	const handleRandomNumber = (e) => {
 		e.preventDefault();

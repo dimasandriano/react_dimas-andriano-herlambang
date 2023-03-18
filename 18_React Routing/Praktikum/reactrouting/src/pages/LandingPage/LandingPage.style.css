@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Roboto:wght@500&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+nav {
+	font-family: "Roboto", sans-serif;
+}
+.navbar-brand {
+	font-size: 24px;
+	line-height: 28.5px;
+}
+nav a {
+	font-size: 16px;
+	padding: 12px;
+}
+.container {
+	max-width: 1275px;
+	margin: 0 auto;
+}
+.navbar-nav {
+	display: none;
+}
+#nav-items-right {
+	display: block;
+}
+main {
+	background-color: #37517e;
+}
+.hero {
+	font-family: "Jost", sans-serif;
+	width: 100%;
+	min-height: 760px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+.hero-left h1 {
+	font-size: 48px;
+	line-height: 56px;
+	font-weight: 700;
+}
+.hero-left p {
+	color: rgba(255, 255, 255, 0.6);
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+}
+.hero-left a {
+	text-decoration: none;
+	color: white;
+}
+.hero-left a:last-child {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+}
+.hero-left .btn-started {
+	border-radius: 50px;
+	background-color: #47b2e4;
+	padding: 9px 28.3594px 12px 28px;
+	margin-right: 65px;
+}
+.hero-right img {
+	width: 636px;
+	height: 527px;
+}
+.newsletter {
+	background-color: #f3f5fa;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 50px 0;
+	height: 239px;
+}
+.newsletter-text {
+	width: 636px;
+}
+.newsletter-text h2 {
+	color: #37517e;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 600;
+	margin-bottom: 16px;
+}
+.newsletter-text p {
+	font-family: "Open Sans", sans-serif;
+}
+.newsletter-text form {
+	position: relative;
+}
+#insubs {
+	width: 100%;
+	border-radius: 50px;
+	border-style: none;
+	height: 42.5px;
+	padding: 15px;
+}
+#subs {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 9.25px 20px;
+	border-style: none;
+	border-radius: 50px;
+	background-color: #47b2e4;
+	color: white;
+}
+form button:hover {
+	transition: ease-in-out;
+	transition-duration: 1s;
+	background-color: #0072a8;
+}
+.footer-social {
+	min-height: 340px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-social > :nth-child(n) {
+	width: 330px;
+	height: 220px;
+}
+.alamat {
+	font-family: "Jost", sans-serif;
+}
+.alamat h1 {
+	font-size: 28px;
+	line-height: 28px;
+	font-weight: 600;
+	color: #37517e;
+}
+.alamat p {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #5e5e5e;
+}
+.alamat p span {
+	font-weight: 700;
+}
+.footer-social h2 {
+	font-family: "Jost", sans-serif;
+	font-size: 16px;
+	line-height: 19.2px;
+	font-weight: 700;
+	margin-bottom: 19px;
+}
+.footer-social ul {
+	list-style-type: none;
+	font-family: "Open Sans", sans-serif;
+}
+.footer-social a {
+	text-decoration: none;
+	color: #777777;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 400px;
+}
+.footer-social ul li {
+	margin-bottom: 24px;
+}
+.socialnetwork p {
+	color: #444444;
+	line-height: 21px;
+}
+.social-account {
+	display: flex;
+}
+.social-account a {
+	height: 36px;
+	width: 36px;
+	border-radius: 18px;
+	background-color: #47b2e4;
+	margin-right: 7.64px;
+}
+.copyright {
+	font-family: "Open Sans", sans-serif;
+	background-color: #37517e;
+	color: white;
+}
+.copyright-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 81px;
+}
+.copyright-left {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+}
+.copyright-left span {
+	font-weight: 700;
+}
+.copyright-right {
+	font-size: 13px;
+	line-height: 19.5px;
+	font-weight: 400px;
+}
+.copyright-right a {
+	color: #47b2e4;
+	text-decoration: none;
+}
+/* Mobile */
+@media only screen and (max-width: 992px) {
+	.navbar-nav {
+		display: block;
+	}
+	#nav-items-right {
+		display: none;
+	}
+	.hero {
+		flex-direction: column-reverse;
+		justify-content: start;
+		min-height: min-content;
+		padding: 40px;
+	}
+	.container {
+		margin: 0;
+	}
+	.hero-right {
+		display: flex;
+		justify-content: center;
+	}
+	.hero-right img {
+		width: 70%;
+		height: 70%;
+	}
+	.hero-left h1 {
+		font-size: 26px;
+		line-height: 25px;
+	}
+	.hero-left p {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.hero-left .btn-started {
+		margin-right: 15px;
+	}
+	.footer-social {
+		padding: 40px;
+		flex-wrap: wrap;
+		min-height: 400px;
+	}
+	.footer-social > :nth-child(n) {
+		width: 180px;
+		height: 270px;
+	}
+	.newsletter {
+		padding: 30px;
+	}
+	.footer-social ul li {
+		margin-bottom: 14px;
+	}
+	.social-account a {
+		height: 28px;
+		width: 28px;
+		border-radius: 14px;
+		margin-right: 3px;
+	}
+}

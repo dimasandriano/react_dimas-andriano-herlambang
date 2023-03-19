@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.style.css";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
@@ -9,6 +10,8 @@ export const Navbar = () => {
 					<a className="navbar-brand" href="#">
 						Simple Header
 					</a>
+					<Link to="/">Landing Page</Link>
+					<Link to="/createproduct">Create Product</Link>
 					<button
 						className="navbar-toggler"
 						type="button"

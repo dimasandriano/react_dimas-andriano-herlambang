@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export const ListProduct = ({ products, handleDelete }) => {
 	return (
 		<div>
@@ -20,7 +20,9 @@ export const ListProduct = ({ products, handleDelete }) => {
 						<tbody>
 							{products.map((product) => (
 								<tr key={product.id}>
-									<th scope="col">{product.id}</th>
+									<th scope="col">
+										<Link to={`/detailproduct/${product.id}`}>{product.id}</Link>
+									</th>
 									<th scope="col">{product.productName}</th>
 									<th scope="col">{product.productCategory}</th>
 									<th scope="col">{product.productFreshness}</th>

@@ -10,7 +10,29 @@ function App() {
 	const [productName, setProductName] = useState("");
 	const [productImage, setProductImage] = useState();
 	const [productPrice, setProductPrice] = useState();
-	const [products, setProducts] = useState([]);
+	const [products, setProducts] = useState([
+		{
+			id: "1231231231",
+			productName: "Sepatu",
+			productCategory: "1",
+			productFreshness: "Brand New",
+			productPrice: "100",
+		},
+		{
+			id: "1293877826",
+			productName: "Sandal",
+			productCategory: "2",
+			productFreshness: "Second",
+			productPrice: "200",
+		},
+		{
+			id: "3049898698",
+			productName: "Tas",
+			productCategory: "3",
+			productFreshness: "Refurbished",
+			productPrice: "300",
+		},
+	]);
 	const [formProduct, setFormProduct] = useState({
 		id: "",
 		productName: "",
@@ -59,6 +81,9 @@ function App() {
 		alert("Welcome");
 	}, []);
 
+	useEffect(() => {
+		localStorage.setItem("products", JSON.stringify(products));
+	}, [products]);
 	return (
 		<div>
 			<Navbar />

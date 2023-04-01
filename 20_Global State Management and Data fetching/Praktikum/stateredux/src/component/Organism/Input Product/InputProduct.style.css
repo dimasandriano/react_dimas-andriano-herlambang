@@ -1,0 +1,9 @@
+#file {
+	width: 250px;
+	color: #0d6efd !important;
+	border: 1px solid #0d6efd !important;
+}
+#file::-webkit-file-upload-button {
+	color: white !important;
+	background-color: #0d6efd !important;
+}

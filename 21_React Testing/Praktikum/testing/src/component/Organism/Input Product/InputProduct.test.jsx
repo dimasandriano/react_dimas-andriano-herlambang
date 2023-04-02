@@ -1,6 +1,5 @@
 import React from "react";
 import { describe, it } from "vitest";
-import renderer from "react-test-renderer";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/lib/integration/react";
 import { fireEvent, render, screen } from "@testing-library/react";
@@ -52,11 +51,11 @@ describe("Page Create product", () => {
 			</BrowserRouter>
 		);
 		const productName = screen.getByTestId("product-name-input");
-		fireEvent.change(productName, { target: { value: "test@@$" } });
+		fireEvent.change(productName, { target: { value: "@/#{}" } });
 		const btn = screen.getByTestId("btn-submit");
 		fireEvent.submit(btn);
 		expect(screen.getByTestId("name-error").textContent).toBe(
-			"Masukkan Nama tanpa simbol dan tidak boleh melebihi 25 huruf"
+			"Masukkan Nama minimal 5 huruf, tanpa simbol dan tidak boleh melebihi 25 huruf"
 		);
 	});
 	it("Product Name Tidak boleh Melebihi 25", () => {
@@ -76,7 +75,7 @@ describe("Page Create product", () => {
 		});
 		fireEvent.submit(btn);
 		expect(screen.getByTestId("name-error").textContent).toBe(
-			"Masukkan Nama tanpa simbol dan tidak boleh melebihi 25 huruf"
+			"Masukkan Nama minimal 5 huruf, tanpa simbol dan tidak boleh melebihi 25 huruf"
 		);
 	});
 });

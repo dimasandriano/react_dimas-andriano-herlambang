@@ -199,7 +199,9 @@ exports[`Page Create product > Should Render correctly 1`] = `
                   <div
                     className="invalid-feedback"
                     data-testid="name-error"
-                  />
+                  >
+                    Masukkan Nama tanpa simbol dan tidak boleh melebihi 25 huruf
+                  </div>
                 </div>
                 <div
                   className="mb-3 w-50"

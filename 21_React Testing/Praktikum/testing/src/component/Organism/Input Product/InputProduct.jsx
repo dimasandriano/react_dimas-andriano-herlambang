@@ -76,7 +76,8 @@ const InputProduct = ({ article, bahasa, gantiBahasa }) => {
 										data-testid="product-name-input"
 									/>
 									<div className="invalid-feedback" data-testid="name-error">
-										Masukkan Nama tanpa simbol dan tidak boleh melebihi 25 huruf
+										Masukkan Nama minimal 5 huruf, tanpa simbol dan tidak boleh melebihi
+										25 huruf
 									</div>
 								</div>
 								<div className="mb-3 w-50">

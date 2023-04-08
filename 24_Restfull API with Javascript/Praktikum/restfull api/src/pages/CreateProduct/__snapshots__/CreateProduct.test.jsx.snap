@@ -1,0 +1,543 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Page Create product > Should Render correctly 1`] = `
+[
+  <div>
+    <div>
+      <nav
+        className="navbar navbar-expand-lg bg-white shadow-sm"
+      >
+        <div
+          className="container"
+        >
+          <a
+            className="navbar-brand fw-bold"
+            href="#"
+          >
+            Simple Header
+          </a>
+          <button
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            className="navbar-toggler"
+            data-bs-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
+            type="button"
+          >
+            <span
+              className="navbar-toggler-icon"
+            />
+          </button>
+          <div
+            className="collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul
+              className="me-auto"
+            />
+            <div>
+              <ul
+                className="navbar-nav me-auto mb-2 mb-lg-0"
+              >
+                <li
+                  className="nav-item me-0 me-md-3 mb-2 mb-md-0"
+                >
+                  <a
+                    aria-current="page"
+                    className="nav-link btn btn-primary text-white"
+                    onClick={[Function]}
+                  >
+                    Home
+                  </a>
+                </li>
+                <li
+                  className="nav-item me-0 me-md-3 mb-2 mb-md-0"
+                >
+                  <a
+                    className="nav-link btn btn-primary text-white"
+                    href="#"
+                    onClick={[Function]}
+                  >
+                    Create Product
+                  </a>
+                </li>
+                <li
+                  className="nav-item me-0 me-md-3 mb-2 mb-md-0"
+                >
+                  <a
+                    aria-current="page"
+                    className="nav-link btn btn-primary text-white"
+                    onClick={[Function]}
+                  >
+                    Signin
+                  </a>
+                </li>
+                <li
+                  className="nav-item me-0 me-md-3 mb-2 mb-md-0"
+                >
+                  <a
+                    aria-current="page"
+                    className="nav-link btn btn-primary text-white"
+                    onClick={[Function]}
+                  >
+                    Signup
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link text-primary"
+                    href="#"
+                  >
+                    Features
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link text-primary"
+                    href="#"
+                  >
+                    Pricing
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link text-primary"
+                    href="#"
+                  >
+                    FAQs
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link text-primary"
+                    href="#"
+                  >
+                    About
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <section
+        id="main"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-6 mx-auto p-4"
+          >
+            <div
+              className="text-center mb-5"
+            >
+              <img
+                alt="bootstrap logo"
+                src="/src/assets/bootstrap-logo.png"
+              />
+              <h1
+                className="fw-medium fs-2"
+              >
+                Create Account
+              </h1>
+              <p
+                className="fw-lighter lh-base"
+              >
+                Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.
+              </p>
+              <button
+                className="btn btn-primary"
+                onClick={[Function]}
+              >
+                Change Language
+              </button>
+            </div>
+            <div>
+              <form
+                action=""
+                className="needs-validation"
+                data-testid="form"
+                id="form"
+                noValidate=""
+              >
+                <h2
+                  className="fs-3 fw-medium"
+                >
+                  Detail Product
+                </h2>
+                <div
+                  className="mb-3 w-50"
+                >
+                  <label
+                    className="form-label"
+                    htmlFor="name"
+                  >
+                    Product name
+                  </label>
+                  <input
+                    className="form-control undefined "
+                    data-testid="product-name-input"
+                    id="name"
+                    name="productName"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    className="invalid-feedback"
+                    data-testid="name-error"
+                  >
+                    Masukkan Nama tanpa simbol dan tidak boleh melebihi 25 huruf
+                  </div>
+                </div>
+                <div
+                  className="mb-3 w-50"
+                >
+                  <label
+                    className="form-label"
+                    htmlFor="category"
+                  >
+                    Product Category
+                  </label>
+                  <select
+                    aria-label="Default select example"
+                    className="form-control undefined "
+                    id="category"
+                    name="productCategory"
+                    onChange={[Function]}
+                    required=""
+                    value=""
+                  >
+                    <option
+                      value=""
+                    >
+                      ...
+                    </option>
+                    <option
+                      value="1"
+                    >
+                      One
+                    </option>
+                    <option
+                      value="2"
+                    >
+                      Two
+                    </option>
+                    <option
+                      value="3"
+                    >
+                      Three
+                    </option>
+                  </select>
+                  <div
+                    className="invalid-feedback"
+                  />
+                </div>
+                <div
+                  className="mb-3 w-50"
+                >
+                  <label
+                    className="form-label"
+                    htmlFor="file"
+                  >
+                    Image of Product
+                  </label>
+                  <input
+                    className="form-control undefined "
+                    id="file"
+                    name="productImage"
+                    onChange={[Function]}
+                    required=""
+                    type="file"
+                    value=""
+                  />
+                  <div
+                    className="invalid-feedback"
+                  />
+                </div>
+                <div
+                  className="mb-3"
+                >
+                  <label
+                    className="form-label"
+                    htmlFor="freshness"
+                  >
+                    Product Freshness
+                  </label>
+                  <div
+                    className="form-control undefined "
+                    id="form-check has-validation"
+                  >
+                    <div
+                      className="form-check"
+                    >
+                      <input
+                        checked={false}
+                        className="form-check-input"
+                        id="brandnew"
+                        name="productFreshness"
+                        onChange={[Function]}
+                        type="radio"
+                        value="Brand New"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="brandnew"
+                      >
+                        Brand New
+                      </label>
+                    </div>
+                    <div
+                      className="form-check"
+                    >
+                      <input
+                        checked={false}
+                        className="form-check-input"
+                        id="secondhand"
+                        name="productFreshness"
+                        onChange={[Function]}
+                        type="radio"
+                        value="Second Hand"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="secondhand"
+                      >
+                        Second Hand
+                      </label>
+                    </div>
+                    <div
+                      className="form-check"
+                    >
+                      <input
+                        checked={false}
+                        className="form-check-input"
+                        id="refurbished"
+                        name="productFreshness"
+                        onChange={[Function]}
+                        type="radio"
+                        value="Refurbished"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="refurbished"
+                      >
+                        Refurbished
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    className="invalid-feedback"
+                  />
+                </div>
+                <div
+                  className="mb-3"
+                >
+                  <label
+                    className="form-label"
+                    htmlFor="desc"
+                  >
+                    Additional Description
+                  </label>
+                  <textarea
+                    className="form-control undefined "
+                    id="desc"
+                    name="productDescription"
+                    onChange={[Function]}
+                    required=""
+                    rows={5}
+                    value=""
+                  />
+                  <div
+                    className="invalid-feedback"
+                  />
+                </div>
+                <div
+                  className="mb-3 w-25"
+                >
+                  <label
+                    className="form-label"
+                    htmlFor="price"
+                  >
+                    Product Price
+                  </label>
+                  <input
+                    className="form-control undefined "
+                    id="price"
+                    name="productPrice"
+                    onChange={[Function]}
+                    placeholder=" $ 1"
+                    required=""
+                    type="number"
+                    value=""
+                  />
+                  <div
+                    className="invalid-feedback"
+                  />
+                </div>
+                <button
+                  className="btn btn-primary w-100"
+                  data-testid="btn-submit"
+                  id="btn"
+                  onClick={[Function]}
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section
+        id="list product"
+      >
+        <div
+          className="container"
+        >
+          <h2
+            className="text-center fw-bold fs-2"
+          >
+            List Product
+          </h2>
+          <table
+            className="table"
+          >
+            <thead>
+              <tr>
+                <th
+                  scope="col"
+                >
+                  UUID
+                </th>
+                <th
+                  scope="col"
+                >
+                  Product Name
+                </th>
+                <th
+                  scope="col"
+                >
+                  Product Category
+                </th>
+                <th
+                  scope="col"
+                >
+                  Product Image
+                </th>
+                <th
+                  scope="col"
+                >
+                  Product Freshness
+                </th>
+                <th
+                  scope="col"
+                >
+                  Product Description
+                </th>
+                <th
+                  scope="col"
+                >
+                  Product Price
+                </th>
+                <th
+                  scope="col"
+                >
+                  Action
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th
+                  scope="col"
+                >
+                  e7ce2b97-d0c1-4a75-9c1d-e6dfc8441836
+                </th>
+                <th
+                  scope="col"
+                >
+                  John
+                </th>
+                <th
+                  scope="col"
+                >
+                  Doe
+                </th>
+                <th
+                  scope="col"
+                >
+                  Doe
+                </th>
+                <th
+                  scope="col"
+                >
+                  Doe
+                </th>
+                <th
+                  scope="col"
+                >
+                  Doe
+                </th>
+                <th
+                  scope="col"
+                >
+                  0
+                </th>
+                <th
+                  className="d-flex"
+                >
+                  <button
+                    className="btn btn-outline-primary me-2"
+                  >
+                    <a
+                      className="text-decoration-none"
+                      href="/detailproduct/e7ce2b97-d0c1-4a75-9c1d-e6dfc8441836"
+                      onClick={[Function]}
+                    >
+                      Detail
+                    </a>
+                  </button>
+                  <button
+                    className="btn btn-outline-warning me-2"
+                  >
+                    <a
+                      className="text-decoration-none"
+                      href="/editproduct/e7ce2b97-d0c1-4a75-9c1d-e6dfc8441836"
+                      onClick={[Function]}
+                    >
+                      Edit
+                    </a>
+                  </button>
+                  <button
+                    className="btn btn-outline-danger"
+                    onClick={[Function]}
+                  >
+                    Delete
+                  </button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>,
+  ";",
+]
+`;

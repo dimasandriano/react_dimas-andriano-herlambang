@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { authAction } from "../../../config/redux/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 
-const Signup = () => {
+const Signin = () => {
 	const userEmail = "dimas.andriano.h@gmail.com";
 	const userPassword = "pancasila";
 
@@ -81,4 +81,4 @@ const Signup = () => {
 		</div>
 	);
 };
-export default Signup;
+export default Signin;
